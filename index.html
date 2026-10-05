@@ -2,15 +2,118 @@
 <html>
 <head>
     <title>Anand Hub</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #0b0b0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        .search {
+            width: 90%;
+            max-width: 500px;
+            padding: 15px;
+            margin: 35px 0;
+            border-radius: 12px;
+            border: 1px solid #333;
+            background: #18181d;
+            color: white;
+            font-size: 16px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #18181d;
+            padding: 25px 10px;
+            border-radius: 15px;
+            border: 1px solid #29292f;
+        }
+
+        .card h2 {
+            margin: 5px;
+        }
+
+        .card p {
+            color: #999;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: #666;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Welcome to Anand Hub</h1>
+    <div class="container">
 
-    <p>यह मेरी अपनी website है.</p>
+        <h1>ANAND HUB</h1>
 
-    <p>यहाँ तुम्हें useful resources और मेरी information मिलेगी.</p>
+        <p class="tagline">
+            Everything you need, in one place.
+        </p>
+
+        <input
+            class="search"
+            type="text"
+            placeholder="Search resources..."
+        >
+
+        <div class="categories">
+
+            <div class="card">
+                <h2>🎮 Games</h2>
+                <p>Game resources</p>
+            </div>
+
+            <div class="card">
+                <h2>🎬 Editing</h2>
+                <p>Editing resources</p>
+            </div>
+
+            <div class="card">
+                <h2>🎵 Sounds</h2>
+                <p>Music & sounds</p>
+            </div>
+
+            <div class="card">
+                <h2>📚 Study</h2>
+                <p>Useful study resources</p>
+            </div>
+
+        </div>
+
+        <footer>
+            Made by Anand ⚡
+        </footer>
+
+    </div>
 
 </body>
-</html>
+    </html>
