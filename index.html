@@ -116,6 +116,22 @@
         </footer>
 
     </div>
+<script>
+function searchResources() {
+    let search = document.getElementById("searchBox").value.toLowerCase();
 
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(function(card) {
+        let text = card.innerText.toLowerCase();
+
+        if (text.includes(search)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
 </body>
     </html>
